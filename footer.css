@@ -1,0 +1,48 @@
+/* CONFIGURACAO DO FOOTER PARA MOBILE */
+.rodape{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: var(--gradient);
+    color: white;
+    font-size: 14px;
+    
+}
+
+.rodape__lista{
+    display: flex;
+    list-style: none;
+    gap: 1em;
+}
+
+/* CONFIGURACAO DO FOOTER PARA TABLET*/
+@media screen and (min-width:1024px) {
+
+.rodape{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ee39ac;
+    color: white;
+    font-size: 14px;
+}
+
+.rodape__lista{
+    display: flex;
+    list-style: none;
+    gap: 1em;
+       
+}
+
+
+.rodape__ancora__item{
+    color: white;
+    text-decoration: none;
+    
+}
+}
+
+/* CONFIGURACAO DO FOOTER PARA DESKTOP */
+@media screen and (min-width:1600px){
+    
+}

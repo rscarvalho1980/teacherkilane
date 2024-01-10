@@ -1,0 +1,118 @@
+/* PRECO MOBILE */
+
+
+.preco__mobile{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    
+}
+.preco__container{
+    display: flex;
+    flex-direction: column;
+    background-color: lightgoldenrodyellow;
+    padding: 2em 3.5em;
+    justify-content: center;
+    margin: 2em 3em;
+    border-radius: 1em;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.nosso_plano{
+    font-size:32px ;
+}
+
+.plano{
+    color: var(--azul);
+    font-family: var(--fonte-principal);
+    font-size: 28px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    
+
+}
+
+.preco__div__mobile{
+    display: flex;
+    flex-direction: column;
+    gap: 10em;
+
+}
+
+.preco__imagem__mobile{
+    margin-left: 18em;
+}
+.preco__imagem__mobile2{
+/* padding:2em ; */
+margin: 1em 1em 1em 2.2em;
+border-radius: 20px;
+
+
+}
+
+.preco__desktop{
+    display: none;
+}
+
+/* CONFIGURACAO DO MAIN PRECO PARA TABLET E DESKTOP */
+@media screen and (min-width:1024px) {
+
+.preco__mobile{
+    display: none;
+}
+.preco__desktop{
+    display: flex;
+    
+    justify-content: center;
+    gap: 5em;
+}
+
+.preco__container__desktop{
+    display: flex;
+    flex-direction: column;
+    background-color: lightgoldenrodyellow;
+    padding: 2em 3em;
+    justify-content: center;
+    margin: 6em 1em;
+    border-radius: 1em;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.preco__div__desktop{
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    margin-top: 1em;
+    
+   
+}
+
+.plano__desktop{
+    color: var(--azul);
+    font-family: var(--fonte-principal);
+    font-size: 34px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    
+
+}
+
+.preco__imagem__desktop{
+    margin-left: 10em;
+    
+}
+.preco__imagem__desktop2{
+display: block;
+border-radius: 20px;
+padding: 0em 0em 0em 2em;
+}
+
+.aula_experimental{
+    display: flex;
+justify-content: center;
+margin-left: 7em;
+}
+
+.nosso_plano__desktop{
+    font-size:38px ;
+}

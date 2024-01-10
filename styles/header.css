@@ -1,0 +1,211 @@
+/* INSERINDO UMA IMAGEM MASCARADA NA TAG <SGV> QUE SERÁ CLICÁVEL PARA MENUS HAMBURGERS */
+/* CONFIGURACAO HEADER PARA MOBILE */
+.cabecalho__menu-hamburger{
+    width: 30px;
+    height: 30px;
+    background-image: url("../assets/menu.svg");
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+
+
+    /* Serve para colocar o menu suspenso do menu hamburger, embaixo do icone do menu hamburger. Depois, lá embaixo no lista__menu vamos acrescentar o position absolute */
+    position: relative;
+}
+/* .cabeçalho__menu-hamburguer {
+    width: 24px;
+    height: 24px;
+    background-image: url("../img/Menu.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+ */
+
+
+
+.container{
+    display: flex;
+    align-items: center;
+    margin-right: 1em;
+  
+}
+
+.cabecalho{
+    background-image: var(--gradiente);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    color: var(--branco);
+    width: 27em; 
+    margin-right: .5em;
+       
+}
+
+/* .container__imagem{
+    padding: 1em;
+} */
+.cabecalho__letreiro{
+    margin-left: .5em;
+}
+
+.header__titulo{
+    font-family: var(--fonte-principal);
+    color: var(--cor-branca);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    font-size: 22px;
+    width: 3em;
+}
+
+.header__titulo__now{
+    color: rgb(196, 1, 1);
+    text-shadow: 1px 1px 1px #ffffff;
+}
+
+.lista__menu{
+    display: none;
+    font-family: var(--fonte-secundaria);
+    background-color:var(--branco);
+    position: absolute;
+    top:12%; 
+    list-style: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+    border-radius: 0 0 10px 10px;   
+}
+/* .lista-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 60vw;
+} */
+
+
+.lista__menu__titulo{
+    font-size: 22px;
+    text-shadow: .5px .5px .5px rgba(0, 0, 0, 0.5);
+
+}
+
+.lista__menu__link{
+    text-shadow: .5px .5px .5px rgba(0, 0, 0, 0.5);
+}
+
+/* condicional: se botao__menu estiver selecionado = aparece lista, senão: display none; */
+.menu__botao:checked~.lista__menu{
+    display: block;
+}
+
+.lista__menu__titulo{
+    padding:1em;
+    color: #eb9b00;
+    text-shadow: .5px .5px .5px rgba(0, 0, 0, 0.1);
+
+
+    
+}
+
+.lista__menu__item{
+    color: var(--azul);
+    padding: 1em;
+    font-family: var(--fonte-secundaria);
+}
+
+.lista__menu__link{
+    color:var(--cor-azul);
+    text-decoration: none;
+    
+}
+.menu__botao{
+    display: none;
+}
+
+.header__principal{
+    display: none;
+}
+
+/*CONFIGURACAO DO HEADER PARA TABLET E DESKTOP  */
+@media screen and (min-width:1024px) {
+
+    .cabecalho{
+        display: none;
+    }
+    
+    .header__principal{
+        background-image: var(--gradiente);
+        display: flex;
+        justify-content: space-around;
+        font-size: 22px;
+        align-items: center; 
+        padding: 1em;
+    }
+    .header__image{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+    .header__titulo{
+        color:var(--azul);
+        text-shadow: 2px 2px 2px var(--branco);
+
+
+    }
+    .header__titulo__now{
+        color: red;
+        text-shadow: 2px 2px 2px var(--branco);
+    }
+
+    .menu__itens{
+        display: flex;
+        gap: 1em;
+    }
+
+    .menu__item{
+        font-family: var(--fonte-principal);
+        border-radius: 30px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+        transition: transform 0.5s ease-in-out;
+
+    }
+    .menu__item:hover{
+        
+        background-color:var(--branco);
+        transform: scale(1.5);
+    }
+
+    .header__menu__desktop{
+        padding: .4em;
+        font-family: var(--fonte-principal);
+
+    }
+    .header__menu__desktop:hover{
+        color: var(--azul);
+    }
+    
+    
+    .header__phone__paragrafo{
+        color: var(--branco);
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+        font-size: 12px;
+        
+    
+    }
+        
+    .header__phone{
+        display: flex;
+        align-items: center; 
+        font-family: var(--fonte-principal); 
+        font-size: 28px;
+           
+    }
+    
+    .header__phone__link{
+        display: flex;
+        text-decoration: none;
+    
+    }
+    }
+    /*CONFIGURACAO DO HEADER PARA DESKTOP  */
+@media screen and (min-width:1600px) {
+
+}

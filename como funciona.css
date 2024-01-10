@@ -1,0 +1,66 @@
+/* CONFIGURACAO DO MAIN PARA MOBILE */
+.main__mobile__como-funciona{
+    display: block;
+}
+.main__desktop__como-funciona{
+    display: none;
+}
+
+.como-funciona__div__mobile{
+background-color: var(--branco);
+color: var(--azul);
+padding: 1em;
+font-family: var(--fonte-principal);
+font-size: 30px;
+border-radius: 20px;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+margin: 1em;
+text-align: center;
+}   
+
+.como-funciona__imagem__mobile{
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+
+}
+
+.como-funciona__div__imagem__mobile{
+    display: flex;
+    justify-content: center;
+    margin: 3em 6em;
+
+}
+
+/* CONFIGURACAO DO MAIN PARA TABLET E DESKTOP */
+@media screen and (min-width:1024px) {
+
+    .main__mobile__como-funciona{
+        display: none;
+    }
+    .main__desktop__como-funciona{
+        display: block;
+    }
+
+    .como-funciona__div__imagem__mobile{
+        display: flex;
+        justify-content: center;
+    }
+
+    .como-funciona__div__mobile{
+        background-color: var(--branco);
+        color: var(--azul);
+        padding: 1em;
+        font-family: var(--fonte-principal);
+        font-size: 30px;
+        border-radius: 20px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        margin: 1em;
+        text-align: center;
+        }   
+        
+        .como-funciona__div__imagem__mobile{
+            display: flex;
+            margin:0 2.2em;
+        
+        }

@@ -1,0 +1,206 @@
+/* MAIN MOBILE */
+
+.materiais__mobile{
+    display: block;
+}
+
+.material-didatico__mobile{
+    display: block;
+    background-color: var(--branco);
+    text-align: justify;
+    padding: 1em;
+    margin: 2em 1em 1em 1em ;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+.materiais__tabler-desktop{
+    display: none;
+}
+
+.material-didatico__div__mobile{
+   display: flex;
+   flex-direction: column;
+   background-color: var(--branco);
+   padding: 1em;
+   margin: 1em;
+   border-radius: 20px;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+.telemovel{
+margin-left: 1.5em;
+}
+
+
+.material-didático__titulo__mobile{
+    font-family: var(--fonte-principal);
+    color: var(--azul);
+    font-size: 28px;
+    text-align: justify;
+    padding: 0 1em;
+}
+.material-didático__subtitulo__mobile{
+    font-family: var(--fonte-secundária);
+    color: var(--azul);
+    font-size: 28px;
+    text-align: center;
+    padding: 0 1em;
+}
+.menu__lista__mobile{
+    display: flex;
+    background-color: var(--branco);
+    flex-direction: column;
+    margin:1em; 
+    padding: 1em;
+    list-style: none;
+    /* gap:1em; */
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.menu__div__books__mobile{
+    display: block;
+    align-items: center;
+    gap: 3em;
+}
+
+.menu__itens__lista__mobile{
+text-align: center;
+padding: 1.5em;
+}
+
+.menu__itens__lista__imagem__mobile{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    transition: transform 0.5s ease-in-out;
+
+}
+
+.menu__itens__lista__imagem__mobile:hover{
+    transform: scale(1.5);
+}
+
+
+
+.materiais__desktop{
+    display: none;
+}
+
+.menu__livros__mobile{
+    display: flex;
+    font-family: var(--fonte-principal);
+    font-size: 20px;
+    color: var(--branco);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 1em 5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    background-color:var(--azul); 
+    justify-content: center; 
+   
+   
+}
+
+.link-preco__lista{
+    text-decoration: none;
+    color: var(--azul);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+.menu__ajuste-desktop{
+display: flex;
+flex-direction: column;
+align-items: center;
+color: var(--azul);
+font-family: var(--fonte-secundária);
+font-size: 22px;
+margin-top: 1em 30em;
+}
+
+
+.menu__lista__mobile{
+    display: block;
+}
+
+.materiais__desktop{
+    display: none;
+}
+.menu__lista__desktop{
+    display: none;
+}
+
+
+/* MAIN TABLET E DESKTOP */
+@media screen and (min-width:1024px) {
+
+.menu__lista__mobile{
+    display: none;
+}
+.materiais__desktop{
+    display: block;
+}
+.material-didatico__mobile{
+    background-color: var(--branco);
+    padding: 1em;
+    margin: 5em     ;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.menu__lista__desktop{
+    display: flex;
+    background-color: var(--branco);
+    flex-direction: column;
+    margin:5em;
+    padding: 2em;
+    list-style: none;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.menu__div__books__desktop{
+    display: flex;
+    align-items: center;
+    gap: 10em;
+}
+
+.menu__itens__lista__desktop{
+padding: 2.5em;
+}
+
+.menu__itens__lista__imagem__desktop{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+      
+
+}
+
+.menu__livros__desktop{
+    display: flex;
+    align-items: center;
+    font-family: var(--fonte-principal);
+    font-size: 28px;
+    color: var(--branco);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 1em 5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    background-color:var(--azul);  
+    
+ }
+
+ .link-preco__lista{
+    display: flex;
+    justify-content: center;
+    font-family: var(--fonte-secundária);
+    font-size: 24px;
+    padding-top: 0.5em;
+ }
+
+ 
+
+    
+
+   
+
+   

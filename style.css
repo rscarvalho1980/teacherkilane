@@ -1,0 +1,30 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Anybody:wght@500&family=Bebas+Neue&family=Koulen&family=Old+Standard+TT&family=Open+Sans&family=Palanquin+Dark:wght@400;700&family=Roboto:wght@100;400&family=Saira+Condensed&family=Saira+Extra+Condensed&display=swap');
+
+:root {
+    /* --cor-de-fundo: #EBECEE; */
+    --cor-de-fundo: #FFF3E0;
+    /* --azul: #0845a1; */
+    --azul:#79121A;
+    /* --amarelo:#F2E3B6; */
+    --amarelo:#FFA726;
+    --branco:#ffffff; 
+    --fonte-principal:'Bebas Neue', sans-serif;
+    --fonte-secundária:'Saira Extra Condensed', sans-serif;
+    /* --azul: #0845a1; */
+    --azul:#79121A;
+    --amarelo: #FFA726;
+    --gradiente: linear-gradient(to left, var(--azul), var(--amarelo));
+    /* --rosa:#ee39ac; */
+    --rosa:#FFE0B2;
+    --amarelo: #FFA726;
+    --gradient: linear-gradient(to left, var(--rosa), var(--amarelo));
+
+
+
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--azul);
+}
